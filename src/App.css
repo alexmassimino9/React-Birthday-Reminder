@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+/*Color palette  #F8F5F1 #F8A488 #5AA897 #45526C */ 
+
+*{
+  color: #F8A488;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+/* Body styles*/
+.body {
+  font: 'Merriweather', serif;
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Main container*/
+  .container{ 
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, -15px 21px 22px 19px rgba(69,82,108,0.57); 
+    box-shadow: 0px 10px 13px -7px #000000, -15px 21px 22px 19px rgba(69,82,108,0.57);
+  background-color: #F8F5F1;
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  -webkit-border-radius: 20px 40px 0px 0px;
+-moz-border-radius: 20px 40px 0px 0px;
+border-radius: 20px 40px 0px 0px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+/*PlayerCard*/
+  .playerCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5AA897;
+    border-radius: 12px;
+    box-shadow: 0px 0px 47px 7px rgba(0,0,0,0.46);
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  .img{
+    height: 100px;
+    width: 75px;
+    border-radius: 50%;
+    }
+    .name{
+      margin: 10px;
+    }
+    .btn {
+      background: #3498db;
+      background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+      background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+      background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+      background-image: -o-linear-gradient(top, #3498db, #2980b9);
+      background-image: linear-gradient(to bottom, #3498db, #2980b9);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: Georgia;
+      color: #ffffff;
+      font-size: 19px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+    }
+    
+    .btn:hover {
+      background:  #F8A488;
+      text-decoration: none;
+    }
